@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Вторая итерация</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="http://scripts.kislenko.net/arkanoid/js/p5.min.js"></script>
+    <!-- Demo styles -->
+     <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+ <div class="intro" id="intro"></div>
+<div class="canvas-wrap">
+  <div id="canvas"></div>
+  <div class="plane">
+      <img src="images/1280px-Flag_of_the_United_States.svg.png"  crossorigin="anonymous" />
+  </div>
+</div>
+
+<div class="fireworks-container"></div>
+<div class="fireworks-container"></div>
+
+ <div class="swiper mySwiper">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="container">
+                <h1>Independence Day</h1>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title"></h1>
+              <div class="subtitle">
+                <img src="https://a.d-cd.net/1452bf4s-960.jpg" style="width:1000px;" alt="">
+              </div>
+            </div>
+          </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title"></h1>
+            <div class="container__images">
+              <div class="subtitle">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/JohnHancockSmall.jpg" style="width:400px; "  alt="">
+                <p>John Hancock</p>
+              </div>
+              <div class="subtitle">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Charles_Thomson_full_portrait_-_Joseph_Wright_%28frame_cropped%29.jpg/220px-Charles_Thomson_full_portrait_-_Joseph_Wright_%28frame_cropped%29.jpg" style="width:400px; " alt="">
+                <p>Charles Thomson</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title"></h1>
+            <div class="container__images">
+              <div class="subtitle">
+                <img src="images/Revolutionary-War.jpg" style="width:650px;" alt="">
+                <p>American Revolutionary War</p>
+              </div>
+              <div class="subtitle">
+                <img src="https://hotgeo.ru/uploads/posts/2017-04/1492875574_6.jpg" style="width:400px;" alt="">
+                <p>The Declaration of Independence</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title"></h1>
+            <div class="container__images">
+              <div class="subtitle">
+                <img src="https://www.rotfront.su/wp-content/uploads/2020/07/20200725_USPS.jpg" style="width:500px;" alt="">
+                <p>The US Postal Service</p>
+              </div>
+              <div class="subtitle">
+                <img src="https://image.newsru.com/v2/01/2021/01/5/5768c15c89a12dbf27497d245d51f120.jpg" style="width:500px;" alt="">
+                <p>The US Federal Court of Justice</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title"></h1>
+            <div class="container__images">
+              <div class="subtitle">
+                <img src="images/scale_1200.jpeg" style="width:500px;" alt="">
+                <p>Picnic</p>
+              </div>
+              <div class="subtitle">
+                <img src="https://islam-today.ru/files/news/part_9/91544/365633-INNERRESIZED600-600-o-JULY-4-PARADE-facebook.jpg" style="width:500px;"
+                  alt="">
+                <p>Parade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+              <div class="fireworks"></div>
+              <div class="fireworks-content">
+                <h1 class="title">The end</h1>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/jquery.firework.js"></script>
+  <script>
+        $('.fireworks').fireworks({
+        sound: false, // sound effect
+        opacity: 0.9,
+        width: '100%',
+        height: '100%',
+        backgroundColor: '#fff'
+        });
+    </script>
+
+
+    <!-- Swiper JS -->
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.waves.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="js/Fireworks.js"></script> -->
+    <script src="js/flag.js"></script>
+    <script src="js/curtains.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        keyboard:{
+          enabled:true,
+          onlyInViewport: true,
+          pageUpDown:true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+        this.intensity = random(255);
+        this.firework = new Fireball(random(width), height, this.intensity, true);
+        this.exploded = false;
+        this.fireballs = [];
+
+        this.done = function () {
+          if (this.exploded && this.fireballs.length === 0) return true;
+          else return false;
+        }
+    </script>
+    <noscript>
+      <div align="center">
+        Извините, для работы приложения нужен включённый Javascript
+      </div>
+    </noscript>
+    <script src="js/Fireworks.js"></script>
+  </body>
+</html>

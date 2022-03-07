@@ -1,0 +1,189 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #474a51;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  opacity: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 28px;
+  background: none;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* App */
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px 20px 20px;
+}
+
+.container__1 {
+  max-width: 2080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px 20px 20px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 32px;
+  text-align: justify;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.container__images {
+  display: flex;
+  justify-content: space-between;
+}
+/*Flag*/
+.canvas-wrap {
+  position: absolute;
+
+  /* top: -25px;
+  left: -45px; */
+  top: -23px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* position: relative; */
+}
+#canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.plane {
+  background-color: rgba(0, 0, 0, 0.45);
+  height: calc(100vh + 35px);
+  width: calc(100% + 160px);
+  position: relative;
+  left: -100px;
+}
+.plane img {
+  display: none;
+  position: absolute;
+}
+
+.fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.title {
+  z-index: 10000;
+}
+
+.fireworks-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.fireworks-container:nth-of-type(2) {
+  z-index: 9;
+}
+.countdown {
+  display: flex;
+  gap: 1rem;
+  font-family: "Londrina Solid", cursive;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(-0.05em -0.05em 0.05em rgba(128, 0, 128, 1))
+    drop-shadow(0.05em 0.05em 0.05em rgba(0, 0, 0, 1))
+    drop-shadow(0 0 0.5em rgba(255, 192, 203, 0.5));
+}
+.countdown div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.countdown div .value {
+  font-size: 2.5em;
+  font-weight: 400;
+  /* text-shadow: 0 0 0.05em red, 0 0 0.1em black; */
+}
+.countdown div .label {
+  font-size: 0.8em;
+  font-weight: 300;
+  background: rgba(255, 192, 203, 1);
+  color: rgb(0, 0, 0);
+}
+.countdown div .yeardigit {
+  font-size: 8em;
+  line-height: 0.9em;
+  font-weight: 900;
+}
+
+.fireworks-content {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
