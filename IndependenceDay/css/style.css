@@ -101,14 +101,10 @@ body {
 /*Flag*/
 .canvas-wrap {
   position: absolute;
-
-  /* top: -25px;
-  left: -45px; */
   top: -23px;
   left: 0;
   right: 0;
   bottom: 0;
-  /* position: relative; */
 }
 #canvas {
   position: absolute;
@@ -186,4 +182,116 @@ body {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
+}
+/*smoke*/
+.chart {
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+.first__title {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0;
+}
+.chart:nth-child(2) {
+  animation-delay: 0.9s;
+}
+.chart:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.chart:nth-child(3) {
+  animation-delay: 1.1;
+}
+.chart:nth-child(4) {
+  animation-delay: 1.3s;
+}
+.chart:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.chart:nth-child(6) {
+  animation-delay: 1.7s;
+}
+.chart:nth-child(7) {
+  animation-delay: 1.9s;
+}
+.chart:nth-child(8) {
+  animation-delay: 2.1s;
+}
+.chart:nth-child(9) {
+  animation-delay: 2.3s;
+}
+.chart:nth-child(10) {
+  animation-delay: 2.5s;
+}
+.chart:nth-child(11) {
+  animation-delay: 2.7s;
+}
+.chart:nth-child(12) {
+  animation-delay: 2.9s;
+}
+
+.chart:nth-child(14) {
+  animation-delay: 3.1s;
+}
+.chart:nth-child(15) {
+  animation-delay: 3.3s;
+}
+.chart:nth-child(16) {
+  animation-delay: 3.5s;
+}
+.video {
+  object-fit: cover;
+  height: 100%;
+  margin-left: -100px;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes anima {
+  0% {
+    opacity: 1;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(0);
+  }
+}
+.first {
+  background-color: rgba(0, 0, 0);
+  top: 0;
+  height: 100%;
+  width: calc(100% + 160px);
+  position: absolute;
+  left: -100px;
+  z-index: -1;
+  animation: anima 1s linear forwards;
+  animation-delay: 5s;
+}
+.section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  background: linear-gradient(to right, #fff, #00f, #fff, #f00f, #fff);
+  mix-blend-mode: color;
+  pointer-events: none;
 }
