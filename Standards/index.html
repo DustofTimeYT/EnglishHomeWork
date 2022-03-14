@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Эталоны единиц физических величин</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+     <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+<div class="intro" id="intro"></div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="container">
+                <h1>Эталоны единиц физических величин. Стандартные образцы.</h1>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title">История появления эталона в Российской Империи</h1>
+            <div class="subtitle">
+              <img src="/images/5u71QGJaQSQ.jpg" style="max-width:1000px; " alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title">Основные единицы:</h1>
+            <div class="text">
+              <ul>
+              <li>длина, выраженная в метрах [м]</li>
+              <li>масса, выраженная в килограммах [кг]</li>
+              <li>время, выраженное в секундах [с]</li>
+              <li>сила электрического тока, выраженная в Амперах [А]</li>
+              <li>термодинамическая температура, выраженная в градусах Кельвина [К]</li>
+              <li>сила света, выраженная в канделах [кд]</li>
+              <li>количество вещества, выраженное в молях [моль]</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title">Три основные единицы</h1>
+            <div class="container__images">
+              <div class="subtitle">
+                <img src="/images/m.jpg" style="max-width:600px; "
+                  alt="">
+                <div class="text__subtitle">Эталон метра
+                Отказались в 1960</div>
+              </div>
+              <div class="subtitle">
+                <img src="/images/s.jpg" style="max-width:600px; " alt="">
+                <div class="text__subtitle">Эталон секунды
+                  Отказались в 1967</div>
+              </div>
+              <div class="subtitle">
+                <img
+                  src="/images/kgjpg.jpg"
+                  style="max-width:600px; " alt="">
+                <div class="text__subtitle">Эталон килограмма
+                Отказались в 2019</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title">Как отказались от эталона килограмма</h1>
+            <div class="container__images">
+              <div class="subtitle">
+                <img src="/images/Рисунок1.jpg" style="max-width:600px; " alt="">
+                <div class="text__subtitle">Кремниевая сфера</div>
+              </div>
+              <div class="subtitle">
+                <img src="/images/Рисунок2.jpg" style="max-width:600px; " alt="">
+                <div class="text__subtitle">Весы Кибла</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h1 class="title">Спасибо за внимание</h1>
+            </div>
+          </div>
+        </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.waves.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        keyboard:{
+          enabled:true,
+          onlyInViewport: true,
+          pageUpDown:true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
