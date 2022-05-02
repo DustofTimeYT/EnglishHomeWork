@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cybercafe</title>
+    <style>
+        html {
+            overflow: hidden;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="http://scripts.kislenko.net/arkanoid/js/p5.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <!-- Demo styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<div class="intro"></div>
+<div class="canvas-wrap">
+    <div class="plane">
+        <img src="https://i0.wp.com/criptotendencia.com/wp-content/uploads/2022/03/Mundo-Metaverso.jpg?fit=999%2C562&ssl=1&resize=1280%2C720" class="back" alt="">
+    </div>
+</div>
+    <div class="swiper mySwiper" style="background-color: rgba(0, 0, 0, 0.25);">
+        <div class="swiper-wrapper" >
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="patterns">
+                        <svg width="100%" height="100%">
+                            <defs>
+                                <pattern id="polka-dots" x="0" y="0" width="100" height="100"
+                                    patternUnits="userSpaceOnUse">
+                                </pattern>
+                                <style>
+                                    @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                                </style>
+
+                            </defs>
+
+                            <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+
+
+
+                            <text class="location" x="50%" y="60%" text-anchor="middle">
+                                Cybercafe
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <h1 class="title text">Betweenlands</h1>
+                    <div class="subtitle">
+                        <div class="texts">"There is enough land for everyone!"</div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <h1 class="title text">Location</h1>
+                    <div class="container__images">
+                        <div class="subtitle">
+                            <img class="img" src="images/1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySwiperH swiper-slide">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h1 class="title text">VR</h1>
+                            <div class="container__images">
+                                <div class="subtitle">
+                                    <img class="img" src="https://vr419.ru/wp-content/uploads/2020/10/RewindHeader.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h1 class="title text">MR</h1>
+                            <div class="container__images">
+                                <div class="subtitle">
+                                    <img class="img" src="https://arpost.co/wp-content/uploads/2019/11/hololens-2-microsoft-MR-headset.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h1 class="title text">Fiber optic</h1>
+                            <div class="container__images">
+                                <div class="subtitle">
+                                    <img class="img" src="https://store.hp.com/app/assets/images/uploads/prod/top-10-advantages-of-fiber-topic-internet-connections-hero1566844551360542.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h1 class="title text">Food and drinks</h1>
+                            <div class="container__images">
+                                <div class="subtitle">
+                                    <img class="img" src="https://i.pinimg.com/originals/e4/8f/2c/e48f2c7e47d1f91897885f5ca6a36b13.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="mySwiperH swiper-slide">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h1 class="title text">Furniture</h1>
+                            <div class="container__images">
+                                <div class="subtitle">
+                                    <img class="img" src="https://static.vecteezy.com/system/resources/previews/002/907/969/original/couch-isometric-illustration-red-couch-sofa-armchair-chairs-and-table-isolated-on-white-background-living-room-furniture-vector.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h1 class="title text">Decoration</h1>
+                            <div class="container__images">
+                                <div class="subtitle">
+                                    <img class="img" src="https://img.freepik.com/free-photo/3d-rendering-interior-empty-factory-with-pendant-lamps_493806-4625.jpg?w=1380"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h1 class="title text">Decoration</h1>
+                            <div class="container__images">
+                                <div class="subtitle">
+                                    <img class="img" src="https://external-preview.redd.it/FTCkFpt2fXlfg6ycOFrdSTxtySrD63jB2gcY1gao7Yw.jpg?auto=webp&s=565a360d16e4ea6e083554fb3bc3b7c0704d406e"
+                                        alt="">
+                                </div>
+                                <div class="subtitle">
+                                    <img class="img" style="width: 88%"
+                                        src="https://www.gmw3.com/wp-content/uploads/2018/09/Oculus_Home_new.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <h1 class="title text">Payment</h1>
+                    <div class="subtitle">
+                        <div class="texts">
+                            <ul>
+                                <li>For visitors: 200 rub per hour</li>
+                                <li>For students: 150 rub per hour</li>
+                                <li>visitors with their own equipment: 150 rub per hour</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <h1 class="title text">Money needed</h1>
+                    <div class="subtitle">
+                        <div class="texts">
+                            <ul>
+                                <li>Rent: 200 000 rub per mounth</li>
+                                <li>Equipments: 2 500 000 rub</li>
+                                <li>Advertising and other expenses: 5 000 000 rub</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <h1 class="title">The end</h1>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+</div>
+
+<!-- Swiper JS -->
+<script src="js/three.min.js"></script>
+<script src="js/vanta.waves.min.js"></script>
+<script src="js/app.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- <script src="js/Fireworks.js"></script> -->
+<script src="js/flag.js"></script>
+<script src="js/curtains.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        effect: 'coverflow',
+        mousewheel: true,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiperH", {
+        direction: "horizontal",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        effect: 'flip',
+        mousewheel: false,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageRightLeft: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: false,
+        },
+        nested: true,
+    });
+</script>
+</body>
+
+</html>

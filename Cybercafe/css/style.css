@@ -1,0 +1,175 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #474a51;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  opacity: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 25px;
+  background: none;
+
+  
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* background */
+
+.back{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: 110%;
+}
+
+.canvas-wrap {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.plane {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.45);
+  height: calc(100vh + 35px);
+  width: calc(100% + 160px);
+  position: relative;
+}
+
+/* App */
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px 20px 20px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.texts {
+  font-family: Lora;
+  line-height: 1.4;
+  font-size: 32px;
+  text-align: justify;
+}
+
+.text {
+  font-family: Lora;;
+  line-height: 1.4;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.img {
+  border-radius: 10px;
+  max-width: 120vh;
+  max-height: 120vh;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.container__images {
+  display: flex;
+  text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+
+/*animation text*/
+.patterns {
+  height: 100vh;
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #ffa5d8;
+  font-size: 150px;
+  font-weight: 500;
+  stroke-width: 2.5px;
+
+  animation: textAnimate 5s infinite alternate;
+
+}
+
+.location{
+  align-self: center;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(189, 68%, 75%)
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0%)
+  }
+
+}
